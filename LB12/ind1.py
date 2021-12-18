@@ -1,18 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-
-def subset(mySet, check=None):
+def subset(my_set, check=None):
     if check is None:
         check = []
-    if len(mySet) != 0 and mySet not in check:
-        check.append(mySet)
-        print(set(mySet))
-        for i, elem in enumerate(mySet):
-            subset(mySet[0:i] + mySet[i + 1:len(mySet)], check)
+    if len(my_set) != 0 and my_set not in check:
+        check.append(my_set)
+        print(set(my_set))
+        for i, elem in enumerate(my_set):
+            subset(my_set[0:i] + my_set[i + 1:len(my_set)], check)
 
 
 if __name__ == '__main__':
-    my_set = {int(i) for i in input("Enter the set: ").split()}
-    list_set = list(my_set)
+    start_set = {int(i) for i in input("Enter the set: ").split()}
+    list_set = list(start_set)
     subset(list_set)
