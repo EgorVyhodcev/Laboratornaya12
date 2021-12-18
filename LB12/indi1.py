@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+
 def subset(a, num, s):
     if num == len(a):
         print(s)
