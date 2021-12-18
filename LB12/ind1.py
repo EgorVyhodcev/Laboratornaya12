@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+
 def subset(mySet, check=None):
     if check is None:
         check = []
